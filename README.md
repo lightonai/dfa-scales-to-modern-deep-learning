@@ -1,32 +1,36 @@
-# <img src="_static/lighton_small.png" width=60/>Title
-
+# <img src="_static/lighton_small.png" width=60/> Direct Feedback Alignment Scales to Modern Deep Learning Tasks and Architectures
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  [![Twitter](https://img.shields.io/twitter/follow/LightOnIO?style=social)](https://twitter.com/LightOnIO)
 
-Descriptive Text - with hyperlink to the relevant paper/blog post
+Code for our paper [Direct Feedback Alignment Scales to Modern Deep Learning Tasks and Architectures](https://arxiv.org/). 
 
-**Remember to fill in the Description, Website and Topics of the repository.**
+We study the applicability of Direct Feedback Alignment (DFA) to neural view synthesis, recommender systems, geometric learning, and natural language processing. At variance with common beliefs, we show that challenging tasks can be tackled in the absence of weight transport.
 
 ## Requirements
 
-- Enter a list of requirements in the code environment, or point to the `requirements.txt` file
-- Give instructions on how to fetch the dataset, if needed
+- A `requirements.txt` file is available at the root of this repository, specifying the required packages for all of our experiments;
+- Our DFA implementation, `TinyDFA`, is pip-installable: from the `TinyDFA` folder, run `pip install .`; 
+- `tsnecuda` may require installation from source: see the [tsne-cuda repository](https://github.com/CannyLab/tsne-cuda) for details;
+- Neural rendering datasets can be found on the [NeRF website](http://www.matthewtancik.com/nerf)--other datasets will be automatically fetched.
+
+## Citation
+
+If you found this code useful in your research, please consider citing:
+
+```bibtex
+@article{launay2020dfascaling,
+  title={Direct Feedback Alignment Scales to Modern Deep Learning Tasks and Architectures},
+  author={Launay, Julien and Iacopo, Poli and Francois, Boniface and Krzakala, Florent},
+  journal={arXiv preprint arXiv:XXXX.XXXX},
+  year={2020}
+}
+```
 
 ## Reproducing our results
 
-- Give detailed instructions on how to run the code in order to replicate the results
+- Instructions for reproduction are given within each task folder, in the associated `README.md` file. 
 
-## <img src="_static/lighton_cloud_small.png" width=120/> Access to Optical Processing Units
+## <img src="_static/lighton_cloud_small.png" width=120/> About LightOn/LightOn Cloud
 
+LightOn develops a light-based technology required in large scale artificial intelligence computations. Our ambition is to significantly reduce the time and energy required to make sense of the world around us.
 
-
-To request access to LightOn Cloud and try our photonic co-processor, please visit: https://cloud.lighton.ai/
-
-For researchers, we also have a LightOn Cloud for Research program, please visit https://cloud.lighton.ai/lighton-research/ for more information.
-
-## Citation \[ OPTIONAL \]
-
-If you found this implementation useful in your research, please consider citing:
-<Bibtex for citation>
-
-## Hardware specs \[ OPTIONAL \]
-Give details on the hardware used. This is mandatory only if there are timing benchmarks in the repository.
+Please visit https://cloud.lighton.ai/ for more information on accessing our technology.
