@@ -107,7 +107,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--no-gpu', action='store_true', default=False,
                         help='disables GPU training')
-    parser.add_argument('-g', '--gpu-id', type=int, default=1, metavar='i',
+    parser.add_argument('-g', '--gpu-id', type=int, default=0, metavar='i',
                         help='id of the gpu to use (default: 0)')
     parser.add_argument('-s', '--seed', type=int, default=0, metavar='S',
                         help='random seed (default: 0)')
