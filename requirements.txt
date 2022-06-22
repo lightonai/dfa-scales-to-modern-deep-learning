@@ -1,7 +1,7 @@
 ConfigArgParse==1.2
 lmdb==0.98
 matplotlib==3.2.1
-numpy==1.18.2
+numpy==1.22.0
 python-dateutil==2.8.1
 PyYAML==5.3.1
 seaborn==0.10.1
